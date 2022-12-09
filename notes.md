@@ -13,10 +13,11 @@ User Agent [CONCEPTUAL ASIDE]
 - Screen readers:Delivers info via spoken word
 - Google bot: Reads info on internet, categorizes it and makes it available for Google search engine.
 
+Why HTML?
 - Using HTML, we'll be creating documents which will be requested by Users.
 - Our job is to help "User Agents" deliver the contents of our document in the most understandable, accurate way possible so that all users can benifit from it.
 
-M in HTML
+M in HTML:
 - ![image](https://user-images.githubusercontent.com/7345634/206625959-a66bfbbd-a832-4e79-aca2-1eff64e71cd6.png)
 - Consider the text document above, how do we add more meaning to it? What does different sections/lines represent?
 - Tags: (start tag and end tag)
@@ -24,7 +25,7 @@ M in HTML
   - The "markup" describes the document.
   - By "marking up" a document, you are trying to add meaning.
 
-L in HTML
+L in HTML:
 - What if different people use different markup to mean same thing? It would cause a consistency problem.
 - We need to speak the same language. Hence we need a "markup language" to "communicate meaning", which will provide:
 - Consistent vocabulary
@@ -103,5 +104,18 @@ The Root:
   - This aids in speech synthesis(what pronunciations to use)
   - Translation tools(what rules to use).
 
-Metadata:
-<head></head>
+Document Metadata:
+- The primary is called the head element
+- Head:
+  - Element represents the collection of all metadata for the Document.
+  - metadata element: 
+    - <meta charset="UTF-8"
+    - You can use it for various metadata. There are a variety of them. character set is a very common one.
+    - character set: a set of supported chars (numbers, letters, symbols. UTF-8 covers almost everything in every language.
+    - meta doesn't have a closing tag.(there are some others as well)
+  - Some metadata are common enough to have their own element.
+    - e.g., title
+      - Authors should use titles to identify their document even when used out of context.
+      - e.g., user's history or bookmarks or in search results displayed by google bot.
+      - There can be only one title element for a document. 
+  
